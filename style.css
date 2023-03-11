@@ -1,0 +1,74 @@
+body {
+    direction: rtl;
+    background: no-repeat linear-gradient(#240165, #05001c);
+    font-family: 'Baloo Bhaijaan 2', cursive, 'Sunflower', sans-serif;
+    height: 1000px;
+}
+
+#city_name{
+    font-size: 40px;
+    padding-right: 20px;
+    margin-right: 20px;
+
+}
+
+#city_date{
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+.card{
+    margin-top: 30px;
+    width:200px;
+    height: 100%;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header{
+    font-size: 30px;
+
+    background:  linear-gradient(#4c09c8, #5a4c95);
+    color: white;
+}
+
+.card-body{
+    font-size: 29pt;
+}
+
+.date_city{
+ display: flex;
+ justify-content: space-between;
+ padding-left: 15px;
+ padding-right: 15px;
+
+}
+
+h1, h2, h3, h4, h6 {
+    margin: 0;
+    color: white;
+}
+
+select{
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    border: #5a4c95 solid 3px;
+    background: none;
+    color: white;
+    height: 40px;
+    font-size: 12pt;
+    font-family: 'Baloo Bhaijaan 2', cursive, 'Sunflower', sans-serif;
+}
+
+
