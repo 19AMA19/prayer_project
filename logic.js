@@ -1,4 +1,5 @@
 let selectOption = document.getElementById("selected-city")
+let city_title = document.getElementById("city_name")
 
 function getPrayersTimings(cityName){
     let params = {
@@ -45,8 +46,6 @@ function getPrayersTimings(cityName){
             arabicName: "جازان",
             name: "Jāzān"
         }
-    
-
 
         
     ]
@@ -62,6 +61,7 @@ function getPrayersTimings(cityName){
 
 
     selectOption.addEventListener("change", function(){
+        city_title.innerHTML = this.value
         let cityName = ""
         for(let city of cities){
             if(city.arabicName == this.value){
