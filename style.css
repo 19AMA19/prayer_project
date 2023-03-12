@@ -1,8 +1,22 @@
 body {
     direction: rtl;
-    background: no-repeat linear-gradient(#240165, #05001c);
     font-family: 'Baloo Bhaijaan 2', cursive, 'Sunflower', sans-serif;
-    height: 1000px;
+    height: 100vh;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bgImage{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.600);
 }
 
 #city_name{
@@ -17,7 +31,6 @@ body {
     font-weight: 300;
     font-size: 25px;
 }
-
 
 .card{
     margin-top: 30px;
@@ -70,5 +83,3 @@ select{
     font-size: 12pt;
     font-family: 'Baloo Bhaijaan 2', cursive, 'Sunflower', sans-serif;
 }
-
-

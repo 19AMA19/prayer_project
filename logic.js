@@ -1,5 +1,8 @@
 let selectOption = document.getElementById("selected-city")
 let city_title = document.getElementById("city_name")
+let bgImage = document.querySelector(".bgImage")
+
+
 
 function getPrayersTimings(cityName){
     let params = {
@@ -32,19 +35,26 @@ function getPrayersTimings(cityName){
     let cities = [
         {
             arabicName: "المدينة المنورة",
-            name: "medina"
+            name: "medina",
+            imageUrl: "./images/pic2.jpeg"
         },
         {
             arabicName: "تبوك",
-            name: "Tabūk"
+            name: "Tabūk",
+            imageUrl: "./images/pic3.jpeg"
+
         },
         {
             arabicName: "حائل",
-            name: "Ḩā'il"
+            name: "Ḩā'il",
+            imageUrl: "./images/pic1.jpeg"
+
         },
         {
             arabicName: "جازان",
-            name: "Jāzān"
+            name: "Jāzān",
+            imageUrl: "./images/pic4.jpeg"
+
         }
 
         
@@ -66,6 +76,7 @@ function getPrayersTimings(cityName){
         for(let city of cities){
             if(city.arabicName == this.value){
                 cityName = city.name
+                bgImage.style.background = 'url('+ city.imageUrl +')'
             }
             getPrayersTimings(cityName)
         }
