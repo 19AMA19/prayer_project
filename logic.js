@@ -15,7 +15,9 @@ function getPrayersTimings(cityName){
         })
         .then(function (response) {
         let prayTimes = response.data.data.timings
-        let date    = response.data.data.date.gregorian.date
+        let dateGregorian = response.data.data.date.gregorian.date
+        let dateHijri   = response.data.data.date.hijri.date
+
         let weekday = response.data.data.date.hijri.weekday.ar
         document.getElementById("Fajr").innerHTML = prayTimes.Fajr
         // document.getElementById("Sunrise").innerHTML = prayTimes.Sunrise
@@ -23,9 +25,9 @@ function getPrayersTimings(cityName){
         document.getElementById("Asr").innerHTML = prayTimes.Asr
         document.getElementById("Maghrib").innerHTML = prayTimes.Maghrib
         document.getElementById("Isha").innerHTML = prayTimes.Isha
-        document.getElementById("city_date").innerHTML = `${weekday} ${date}`
-        console.log(response.data);
-
+        document.getElementById("weekday").innerHTML = `${weekday}`
+        document.getElementById("gregorian_date").innerHTML = `${dateGregorian}`
+        document.getElementById("hijri_date").innerHTML = `${dateHijri}`
         })
         .catch(function (error) {
         console.log(error);
