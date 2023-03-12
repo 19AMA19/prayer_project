@@ -1,0 +1,169 @@
+* {
+    font-family: 'Sunflower', sans-serif;
+}
+
+body{
+    background-color: #F5EDCE;
+}
+
+#navbar {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+
+}
+
+#home {
+    background-color: #3c446c;
+    background-image: url(/img/bgl.png);
+}
+
+#applicationFeatures {
+    background-image: url(/img/bgl.png);
+}
+
+#topDrivers {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#topDepartments {
+    background-image: url(/img/bgl.png);
+
+}
+
+#monthlyStatisticsReport {
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#monthlyQuizesCompetition {
+    color: #232d4e;
+    ;
+    background-image: url(/img/bgl.png);
+}
+
+#contactUs{
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png);
+}
+
+#footer{
+    background-color: #232d4e;
+    background-image: url(/img/bgl.png); 
+}
+
+#faq{
+    background-image: url(/img/bgl.png); 
+}
+
+
+
+#proImage {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#tj{
+    text-align: justify;
+}
+
+#titl{
+ font-weight:500;
+}
+
+.cir {
+    color: #232d4e;
+    font-size: 12pt;
+    background: #ffb703;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+
+}
+
+/* ------------------------ Dashboard Design ------------------------ */
+
+#emp{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* -------------------- KPI ----------------- */
+.cirGreen{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #2B7A0B;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+.cirYellow{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #FF8E00;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+.cirRed{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #FF1700;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+.cirNor{
+    color: #232d4e;
+    font-size: 25pt;
+    background: #3e0387;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid white;
+    display: inline-flex;
+}
+
+#MyProPic{
+    border: 2px solid #ffc107;
+    width: 160px;
+    height: 160px;
+    /* border-radius: 50%; */
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+

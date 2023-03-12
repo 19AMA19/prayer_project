@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayers Time</title>
     <link rel="stylesheet" href="style.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="bgImage">
-
-        <div id="main_section">
+<div class="container-fliude" id="bgImage">
+    <section>
             <div>
                 <h1 id="city_name">جدة</h1>
                 <div class="date_city">
@@ -26,71 +26,72 @@
                         </select>
                     </div>
                 </div>
-                <hr>
+                <hr id="hr">
             </div>
+    </section>
+
+    <section class="align-items-center justify-content-between text-center">
+    <!-- Timing -->
+    <div class="timings d-flex justify-content-around">
+        <div class="card col-md-2 col-xs-2 col-lg-2">
+            <div class="card-header">الفجر</div>
+              <div class="card-body">
+              <p id="Fajr">12:00</p>
+            </div>
+          </div>
+<!--     
+          <div class="card col-md-1 col-xs-12 col-lg-2">
+            <div class="card-header">الشروق</div>
+              <div class="card-body">
+              <p id="Sunrise">12:00</p>
+            </div>
+          </div>
+     -->
+          <div class="card col-md-2 col-xs-2 col-lg-2">
+            <div class="card-header">الظهر</div>
+              <div class="card-body">
+              <p id="Dhuhr">12:00</p>
+            </div>
+          </div>
+    
+          <div class="card col-md-2 col-xs-2 col-lg-2">
+            <div class="card-header">العصر</div>
+              <div class="card-body">
+              <p id="Asr">12:00</p>
+            </div>
+          </div>
+    
+          <div class="card col-md-2 col-xs-2 col-lg-2">
+            <div class="card-header">المغرب</div>
+              <div class="card-body">
+              <p id="Maghrib">12:00</p>
+            </div>
+          </div>
+    
+          <div class="card col-md-2 col-xs-2 col-lg-2">
+            <div class="card-header">العشاء</div>
+              <div class="card-body">
+              <p id="Isha">12:00</p>
+            </div>
+          </div>
+    </div>
+
+    <section>
+        <div>
+            <p id="title"></p>
         </div>
-    
-        <!-- Timing -->
-        <div class="center" style="justify-content: space-around;">
-            
-            <div class="card">
-                <div class="card-header">
-                    <h5>الفجر</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Fajr">12:00</h5>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-header">
-                    <h5>الشروق</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Sunrise">12:00</h5>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-header">
-                    <h5>الظهر</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Dhuhr">12:00</h5>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-header">
-                    <h5>العصر</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Asr">12:00</h5>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-header">
-                    <h5>المغرب</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Maghrib">12:00</h5>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-header">
-                    <h5>العشاء</h5>
-                </div>
-                <div class="card-body">
-                    <h5 id="Isha">12:00</h5>
-                </div>
-            </div>
+        <div >
+            <p id="content"></p>
         </div>
-        <!-- // Timing // -->    
+
+    </section>
+    
+    <!-- // Timing // -->   
+    </section>
     </div>
 
     <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="logic.js"></script>
 </body>
 </html>
