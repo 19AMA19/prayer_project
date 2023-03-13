@@ -9,7 +9,7 @@ function getPrayersTimings(cityName){
         city :cityName
     }
     
-    axios.get('http://api.aladhan.com/v1/timingsByCity', {
+    axios.get('https://api.aladhan.com/v1/timingsByCity', {
         params: params
         })
         .then(function (response) {
@@ -96,7 +96,6 @@ function getPrayersTimings(cityName){
                 cityName = city.name
                 document.getElementById("title").innerHTML = city.about.title
                 document.getElementById("content").innerHTML = city.about.content
-         
                 bgImage.style.background = 'url('+ city.imageUrl +')'
             }
             getPrayersTimings(cityName)
