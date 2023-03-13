@@ -1,7 +1,6 @@
 let selectOption = document.getElementById("selected-city")
 let city_title = document.getElementById("city_name")
 let bgImage = document.querySelector("#bgImage")
-// let title = document.getElementById("title")
 let content = document.getElementById("content")
 
 function getPrayersTimings(cityName){
@@ -10,7 +9,7 @@ function getPrayersTimings(cityName){
         city :cityName
     }
     
-    axios.get('http://api.aladhan.com/v1/timingsByCity', {
+    axios.get('https://api.aladhan.com/v1/timingsByCity', {
         params: params
         })
         .then(function (response) {
