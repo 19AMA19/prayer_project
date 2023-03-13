@@ -14,13 +14,13 @@ function getPrayersTimings(cityName){
         })
         .then(function (response) {
         let prayTimes = response.data.data.timings
-        
+
         let dateGregorian = response.data.data.date.gregorian.date
         let dateHijri   = response.data.data.date.hijri.date
 
         let weekday = response.data.data.date.hijri.weekday.ar
         document.getElementById("Fajr").innerHTML = prayTimes.Fajr
-        // document.getElementById("Sunrise").innerHTML = prayTimes.Sunrise
+        document.getElementById("Sunrise").innerHTML = prayTimes.Sunrise
         document.getElementById("Dhuhr").innerHTML = prayTimes.Dhuhr
         document.getElementById("Asr").innerHTML = prayTimes.Asr
         document.getElementById("Maghrib").innerHTML = prayTimes.Maghrib

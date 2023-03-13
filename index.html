@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prayers Time</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Sunflower:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<div class="container-fliude" id="bgImage">
-    <section>
-            <div id="main">
-                <h1 id="city_name">المدينة المنورة</h1>
-                <div class="date_city">
-                    <div>
-                        <h4 id="weekday"></h4>
-                        <h4 id="gregorian_date"></h4>
-                        <h4 id="hijri_date"></h4>
+  <body id="bgImage">
+        <div id="tr">
+        <!-- Header Section -->
+        <section>
+          <div id="main">
+            <h1 id="city_name" class="text-white">المدينة المنورة</h1>
+            <div class="date_city">
+              <div>
+                <h4 id="weekday"></h4>
+                <h4 id="gregorian_date"></h4>
+                <h4 id="hijri_date"></h4>
+              </div>
+              <div>
+                <select id="selected-city"></select>
+              </div>
+            </div>
+            <hr id="hr" />
+          </div>
+        </section>
+        <!-- // Header Section // -->
+
+
+        <!-- Prayer Times Section -->
+        <section class="p-2 col-md-12 col-lg-12">
+          <div class= " container">
+              <h2 class="text-center pb-4 text-white">مواقيت الصلاة</h2>
+
+              <div class="row align-items-center justify-content-between text-center">
+
+                
+                <div class="col-xs-2 col-lg-2 col-md-2">
+                  <div>
+                      <p class="card-title" >الفجر</p>
+                      <p class="card-body" id="Fajr">12:00</p>
                     </div>
+                  </div>
+
+                  <div class="col-xs-2 col-lg-2 col-md-2">
                     <div>
-                        <select id="selected-city">
-                        </select>
+                      <p class="card-title" >الشروق</p>
+                      <p class="card-body" id="Sunrise">12:00</p>
                     </div>
-                </div>
-                <hr id="hr">
-            </div>
-    </section>
+                  </div>
 
-    <section class="align-items-center justify-content-between text-center">
-    <!-- Timing -->
-    <div class="timings d-flex justify-content-around">
-        <div class="card col-md-2 col-xs-2 col-lg-2">
-            <div class="card-header">الفجر</div>
-              <div class="card-body">
-              <p id="Fajr">12:00</p>
-            </div>
-          </div>
-<!--     
-          <div class="card col-md-1 col-xs-12 col-lg-2">
-            <div class="card-header">الشروق</div>
-              <div class="card-body">
-              <p id="Sunrise">12:00</p>
-            </div>
-          </div>
-     -->
-          <div class="card col-md-2 col-xs-2 col-lg-2">
-            <div class="card-header">الظهر</div>
-              <div class="card-body">
-              <p id="Dhuhr">12:00</p>
-            </div>
-          </div>
-    
-          <div class="card col-md-2 col-xs-2 col-lg-2">
-            <div class="card-header">العصر</div>
-              <div class="card-body">
-              <p id="Asr">12:00</p>
-            </div>
-          </div>
-    
-          <div class="card col-md-2 col-xs-2 col-lg-2">
-            <div class="card-header">المغرب</div>
-              <div class="card-body">
-              <p id="Maghrib">12:00</p>
-            </div>
-          </div>
-    
-          <div class="card col-md-2 col-xs-2 col-lg-2">
-            <div class="card-header">العشاء</div>
-              <div class="card-body">
-              <p id="Isha">12:00</p>
-            </div>
-          </div>
-    </div>
+                  <div class="col-xs-2 col-lg-2 col-md-2">
+                    <div>
+                      <p class="card-title" >الظهر</p>
+                      <p class="card-body" id="Dhuhr">12:00</p>
+                    </div>
+                  </div>
 
-    <section>
-        <div>
-            <p id="title"></p>
-        </div>
-        <div>
-            <p id="content"></p>
-        </div>
-    </section>
-    
-    <!-- // Timing // -->   
-    </section>
-    </div>
+                  <div class="col-xs-2 col-lg-2 col-md-2">
+                    <div>
+                      <p class="card-title" >العصر</p>
+                      <p class="card-body" id="Asr">12:00</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2 col-lg-2 col-md-2">
+                    <div>
+                      <p class="card-title" >المغرب</p>
+                      <p class="card-body" id="Maghrib">12:00</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2 col-lg-2 col-md-2">
+                    <div>
+                      <p class="card-title" >العشاء</p>
+                      <p class="card-body" id="Isha">12:00</p>
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+        </section>
+        <!-- //Prayer Times Section // -->
+
+        <!-- About Section -->
+        <section class="col-md-12 col-lg-12">
+          <div class= "container">
+              <div class="row align-items-center justify-content-between text-center">
+                  <div class="col-sm-12 col-lg-12 col-md-12 align-items-center">
+                    <div>
+                      <p class="card-title" id="title"></p>
+                      <p class="card-body" id="content"></p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- // About Section // -->
+      </div>
+
+        
+
 
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
-
     <script src="logic.js"></script>
-</body>
+  </body>
 </html>
+
+
+
+            <!--     
+    <div class="card col-md-1 col-xs-12 col-lg-2">
+      <div class="card-header">الشروق</div>
+        <div class="card-body">
+        <p id="Sunrise">12:00</p>
+      </div>
+    </div>
+-->
